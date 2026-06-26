@@ -4,82 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ResearchMate AI</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>ResearchMate AI</h1>
-    </header>
-    <main>
-      <section class="introduction">
-        <p>Generate Better Research Ideas with AI</p>
+    <div class="container">
+      <header>
+        <h1>ResearchMate AI</h1>
+      </header>
+      <main>
+        <section class="introduction">
+          <p class="intro-title">Generate Better Research Ideas with AI</p>
 
-        <p>
-          Discover research topics, questions, objectives, methodologies and
-          keywords in seconds.
-        </p>
-      </section>
-      <section class="generator" id="generator">
-        <h2>Research Generator</h2>
+          <p class="intro-text">
+            Discover research topics, questions, objectives, methodologies and
+            keywords in seconds.
+          </p>
+        </section>
+        <section class="generator" id="generator">
+          <h2>Research Generator</h2>
 
-        <form>
-          <div class="form-group">
-            <label for="field">Field of Study</label>
-            <input type="text" id="field" placeholder="e.g. Geology" required />
-          </div>
+          <form id="research-form">
+            <div class="form-group">
+              <label for="field">Field of Study</label>
+              <input
+                type="text"
+                id="field"
+                placeholder="e.g. Geology"
+                required
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="specialization">Specialization</label>
-            <input
-              type="text"
-              id="specialization"
-              placeholder="e.g. Hydrogeochemistry"
-            />
-          </div>
+            <div class="form-group">
+              <label for="specialization">Specialization</label>
+              <input
+                type="text"
+                id="specialization"
+                placeholder="e.g. Hydrogeochemistry"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="degree">Degree</label>
-            <select id="degree">
-              <option>BSc Honours</option>
-              <option selected>MSc</option>
-              <option>PhD</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="degree">Degree</label>
+              <select id="degree">
+                <option>BSc Honours</option>
+                <option selected>MSc</option>
+                <option>PhD</option>
+              </select>
+            </div>
 
-          <div class="form-group">
-            <label for="country">Country</label>
-            <input type="text" id="country" placeholder="e.g. South Africa" />
-          </div>
+            <div class="form-group">
+              <label for="country">Country</label>
+              <input type="text" id="country" placeholder="e.g. South Africa" />
+            </div>
 
-          <div class="form-group">
-            <label for="interest">Research Interests</label>
-            <textarea
-              id="interest"
-              rows="5"
-              placeholder="Describe your research interests..."
-            ></textarea>
-          </div>
+            <div class="form-group">
+              <label for="interest">Research Interests</label>
+              <textarea
+                id="interest"
+                rows="5"
+                placeholder="Describe your research interests..."
+              ></textarea>
+            </div>
 
-          <button type="submit">🔍 Generate Research</button>
-        </form>
-      </section>
-      <section class="results">
-        <div id="ai-response"></div>
-      </section>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/matlakalasedibelwana-cpu" target="_blank"
-        >Matlakala Sedibelwana</a
-      >, is open-sourced on
-      <a
-        href="https://github.com/matlakalasedibelwana-cpu/ResearchMate-AI"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://researchmate-ai.netlify.app/" target="_blank">Netlify</a>
-    </footer>
-    <script src="src/index.js"></script>
+            <button type="submit">🔍 Generate Research</button>
+          </form>
+        </section>
+        <section class="results">
+          <h2>Results</h2>
+          <div id="ai-response"></div>
+        </section>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/matlakalasedibelwana-cpu" target="_blank"
+          >Matlakala Sedibelwana</a
+        >, is open-sourced on
+        <a
+          href="https://github.com/matlakalasedibelwana-cpu/ResearchMate-AI"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://researchmate-ai.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
